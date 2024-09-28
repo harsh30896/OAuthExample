@@ -31,7 +31,7 @@ public class UserController {
         }
         return response;
     }
-
+    // minor changes
     @GetMapping("/details")
     public User getUserDetails(@AuthenticationPrincipal OAuth2User principal) {
         String userName = principal.getAttribute("name");
